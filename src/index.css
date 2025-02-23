@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F9EFDB;
+    --foreground: #638889;
+    --card: #EBD9B4;
+    --card-foreground: #638889;
+    --popover: #EBD9B4;
+    --popover-foreground: #638889;
+    --primary: #9DBC98;
+    --primary-foreground: #000000;
+    --secondary: #9DBC98;
+    --secondary-foreground: #638889;
+    --muted: #9DBC98;
+    --muted-foreground: #638889;
+    --accent: #638889;
+    --accent-foreground: #fff;
+    --destructive: #dc3545;
+    --destructive-foreground: #fff;
+    --border: transparent;
+    --input: #ced4da;
+    --ring: rgba(0, 123, 255, 0.5);
+    --card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #212529;
+    --foreground: #f8f9fa;
+    --card: #343a40;
+    --card-foreground: #f8f9fa;
+    --popover: #343a40;
+    --popover-foreground: #f8f9fa;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #86B49C;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #759886;
+  }
+}
